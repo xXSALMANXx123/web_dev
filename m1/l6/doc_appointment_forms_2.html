@@ -1,0 +1,91 @@
+6<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Doctor's Appointment</title>
+</head>
+
+<body>
+
+    <h1>🏥 My Doctor's Appointment</h1>
+    <p>Fill in the form to book your appointment.</p>
+    <hr>
+
+    <!-- Form to collect the patient's information -->
+    <!-- TODO: Add the form tag  -->
+     <form>
+
+        <!-- Personal information fields -->
+        <!-- TODO: Add a fieldset to group the personal information fields -->
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <br><br>
+
+            <label for="patient-id">Patient ID:</label>
+            <!-- TODO: Add an input field for the patient ID -->
+            <input type="text" id="patient-id" placeholder="Enter your id">
+
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob">
+        </fieldset>
+
+        <br>
+
+        <!-- Add fields related to the doctor's visit -->
+        <fieldset>
+            <legend>Your Visit</legend>
+
+            <label for="doctor">Choose your Doctor:</label>
+            <!-- TODO: Add a select dropdown for the doctor options -->
+            <select>
+                <option value="">-- Select a doctor --</option>
+                <!-- TODO: Add more options for the doctors with their names -->
+                
+                <option value="Dr. Syed">Dr. Syed</option>
+                <option value="Dr.a">Dr.a</option>
+            </select>
+
+            <br><br>
+
+            <label>Why are you visiting?</label><br>
+
+            <!-- Use radio buttons when the user can select only one option -->
+            <input type="radio" name="reason" value="fever"> Fever<br>
+            <!-- TODO: Add more radio buttons for other reasons like "Checkup", "Vaccination", etc. -->
+            <input type="radio" name="reason" value="cough"> Fever<br>
+            <br><br>
+
+            <label for="notes">Notes for the doctor:</label><br>
+            <!-- TODO: Add a textarea for the user to enter additional notes for the doctor and mention values for rows and cols -->
+            <textarea  id="notes" rows="4" cols="35" placeholder="Enter your message"></textarea>
+        </fieldset>
+
+        <br>
+
+        <!-- Use checkboxes when the user can select multiple options -->
+        <fieldset>
+            <legend>Preferred Visit Day</legend>
+
+            <input type="checkbox" value="monday"> Monday<br>
+            <!-- TODO: Add more checkboxes for other days of the week like "Tuesday", "Wednesday", etc. -->
+             <input type="checkbox" value="Tuesday"> Tuesday<br>
+
+
+        </fieldset>
+
+        <br>
+
+        <!-- Add a submit button to send the form -->
+        <input type="submit" value="Book My Appointment">
+
+    </form>
+
+</body>
+</html>
