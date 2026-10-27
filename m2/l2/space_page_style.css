@@ -1,0 +1,55 @@
+body {
+    /* TODO: Add a background color of your choice */
+    background-color:aqua; 
+
+    background-image: linear-gradient(to bottom, darkblue, navy);
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: Arial, sans-serif;
+}
+
+.page-header {
+    /* TODO: Add color gradient of your choice */
+    background-image:linear-gradient(to bottom,lightblue,green); 
+
+    /* TODO: Add a border radius of your choice */
+    border-radius:10px; 
+
+    /* TODO: Align your text to the center */
+    text-align:center; 
+
+
+    color: white;
+}
+
+.fact-card {
+    background-color: midnightblue;
+    border-radius: 12px;
+    color: white;
+}
+
+.fact-card h2 {
+    /* TODO: Add a text color of your choice */
+    color:red; 
+}
+
+.star {
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    border-radius: 50%;
+
+    /* TODO: Add animation (add twinkle effect for 2s with infinite alternate) */
+    animation: twinkle 3s infinite alternate; 
+}
+
+@keyframes twinkle {
+    /* TODO: Add background-color to 'from' and 'to' states of the animation */
+    from {background-color: red  }
+    to   {background-color: yellow;  }
+}
+
+.footer-text {
+    text-align: center;
+    color: coral;
+}
